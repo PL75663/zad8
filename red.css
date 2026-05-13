@@ -1,0 +1,4 @@
+body { font-family: Arial; background: #fdf2f8; padding: 20px; }
+.cv-container { max-width: 800px; margin: auto; background: white; padding: 20px; border-top: 5px solid red; }
+h1, h2 { color: darkred; }
+input, textarea { width: 100%; margin-bottom: 5px; box-sizing: border-box; padding: 5px; }
