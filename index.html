@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Artem Harbar</title>
+    <link id="theme-style" rel="stylesheet" href="red.css">
+</head>
+<body>
+
+    <main class="cv-container">
+        <!-- ZADANIE 4: Przycisk zmieniający motyw i ukrywający sekcję -->
+        <div style="text-align: center; margin-bottom: 30px;">
+            <button id="theme-toggle-btn" style="padding: 10px; cursor: pointer; margin-right: 10px;">Zmień motyw (Green)</button>
+            <button id="section-toggle-btn" style="padding: 10px; cursor: pointer;">Ukryj Projekty</button>
+        </div>
+
+        <header style="text-align: center; margin-bottom: 30px;">
+            <!-- Твое фото -->
+            <img src="photo.jpg" alt="Moje zdjęcie" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #ccc; margin-bottom: 10px;">
+            
+            <h1>Artem Harbar</h1>
+            <!-- Wymóg: Numer indeksu na stronie -->
+            <p><strong>Numer indeksu: pl75663</strong></p>
+            <p class="position">Student Informatyki | Web Developer</p>
+        </header>
+
+        <section>
+            <h2>O mnie</h2>
+            <p>Pasjonat technologii webowych i programowania.</p>
+        </section>
+
+        <!-- ZADANIE 6: Dane z JSON -->
+        <section>
+            <h2>Umiejętności</h2>
+            <ul id="skills-list"></ul>
+        </section>
+
+        <section id="projects-section">
+            <h2>Projekty</h2>
+            <div id="projects-container"></div>
+        </section>
+
+        <!-- ZADANIE 7: Local Storage -->
+        <section class="notes-section">
+            <h2>Prywatne Notatki (Zapisywane w przeglądarce)</h2>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="note-input" placeholder="Wpisz notatkę...">
+                <button id="add-note-btn">Dodaj notatkę</button>
+            </div>
+            <ul id="notes-list"></ul>
+        </section>
+
+        <!-- ZADANIE 5 i 8: Formularz, walidacja i POST -->
+        <section class="form-section">
+            <h2>Kontakt (Formularz)</h2>
+            <form id="contact-form" novalidate>
+                <div>
+                    <label>Imię:</label>
+                    <input type="text" id="fname" name="fname">
+                    <div class="error-message" id="fname-error" style="color:red; font-size:12px;"></div>
+                </div>
+                <div>
+                    <label>Nazwisko:</label>
+                    <input type="text" id="lname" name="lname">
+                    <div class="error-message" id="lname-error" style="color:red; font-size:12px;"></div>
+                </div>
+                <div>
+                    <label>E-mail:</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error-message" id="email-error" style="color:red; font-size:12px;"></div>
+                </div>
+                <div>
+                    <label>Wiadomość:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                    <div class="error-message" id="message-error" style="color:red; font-size:12px;"></div>
+                </div>
+                <button type="submit" id="submit-btn" style="margin-top: 10px;">Wyślij wiadomość</button>
+                <div id="success-message" style="display: none; color: green; font-weight: bold; margin-top: 10px;">Sukces! Wysłano na serwer.</div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
