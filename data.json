@@ -1,0 +1,7 @@
+{
+  "skills": ["HTML5", "CSS3", "JavaScript", "Git"],
+  "projects": [
+    { "title": "Projekt CV", "description": "Moje interaktywne CV" },
+    { "title": "Aplikacja C#", "description": "Zarządzanie bazą danych" }
+  ]
+}
